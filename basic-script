@@ -1,0 +1,15 @@
+<?php
+/**
+ * Child theme functions.
+ */
+
+function city_header() { 
+	if (is_page( 'page url here minus the base domain' )) {
+		$i = 'html to insert here';
+	} else if (is_page( 'other page url here minus the base domain') || is_page('other page url here minus the base domain') || is_page('bolton-ct-bail-bonds') || is_page('coventry-ct-bail-bonds')|| is_page('mansfield-ct-bail-bonds')|| is_page('stafford-ct-bail-bonds') || is_page('willington-ct-bail-bonds')) {
+		$i = 'other page url here minus the base domain';
+		return $i;
+} 
+add_shortcode('city-header', 'city_header');	
+
+//short code [city-header]
